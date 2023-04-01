@@ -1,0 +1,28 @@
+
+Introduction
+Multithreading in java is aprocess of executing multiple threads simultaneously.
+A thread is a lightweight  sub-process, the smallest  unit of processsing.
+
+Creating Thread in java 
+1. Using Runnable - interface -> abstrac method run();
+2. Using Thred - class -> It extends the Runnable.
+
+you can implement runnable interface and ovveride a run method provide a task inside.
+also
+you can extend Thread class and use the run method provide the task inside the method.
+
+--------------------------------------------------------------------------------------
+
+Daemon Thread
+It is a service provider thread that provides services to the user.
+setdaemon(Boolean) -- use this method to set thread daemon.
+public Booleean is isDaemon() -- use this method to check if daemon.
+=>A garbage collector is the best exmple of Daemon Thread.
+
+--------------------------------------------------------------------------------------
+
+Producer Consumer Problem
+Synchronized (one thread in one time..), 
+inter-thread Communication (to communicate with each other)
+   .Produce_item()
+   .Consume_item()
